@@ -10,4 +10,14 @@ export class AppComponent {
   oddNumbers = [1,3,5];
   evenNumbers = [2,4]
   onlyOdd = false;
+  evenOrOdd: string = "even";
+  valueForNgSwitch = 10;
+  
+  constructor(){
+    
+  }
+  updateEvenOrOdd(){
+    this.onlyOdd ? this.evenOrOdd = "odd" : this.evenOrOdd = "even"
+  }
+
 }
